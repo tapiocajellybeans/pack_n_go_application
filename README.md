@@ -1,6 +1,6 @@
-# 🍜 ComSci Food App — IB Computer Science Internal Assessment
+# 🍜 Pack N' Go — IB Computer Science Internal Assessment 2024 
 
-An Android food ordering application developed as part of the **IB Computer Science Internal Assessment**. The app simulates a canteen/hawker-style food ordering system with two distinct user roles: **Customer** and **Store Owner**.
+An Android food ordering application developed as part of the **IB Computer Science Internal Assessment**. The app simulates a food pick-up ordering system with two distinct user roles: **Customer** and **Store Owner**.
 
 ---
 
@@ -99,7 +99,7 @@ app/src/main/java/com/example/comscifoodap/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git clone https://github.com/tapiocajellybeans/pack_n_go_application.git
    ```
 
 2. **Open in Android Studio**
