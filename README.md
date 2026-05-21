@@ -1,4 +1,4 @@
-# 🍜 Pack N' Go — IB Computer Science Internal Assessment 2024 
+# 🍜 Pack N' Go App — IB Computer Science Internal Assessment 2024 
 
 An Android food ordering application developed as part of the **IB Computer Science Internal Assessment**. The app simulates a food pick-up ordering system with two distinct user roles: **Customer** and **Store Owner**.
 
