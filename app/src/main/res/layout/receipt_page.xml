@@ -134,6 +134,6 @@
         android:layout_toRightOf="@+id/order"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/total"
-        android:tint="@color/magenta"
+        app:tint="@color/magenta"
         />
 </RelativeLayout>
