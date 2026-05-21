@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rose">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:textSize="30sp"
+        android:text="foodName"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"/>
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_toRightOf="@+id/foodName"
+        android:layout_above="@+id/foodDescription"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"
+        android:textSize="20sp"
+        android:gravity="end|center"
+        android:text="food$"/>
+
+    <TextView
+        android:id="@+id/foodDescription"
+        android:layout_below="@+id/foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20sp"
+        android:paddingBottom="20sp"
+        android:text="foodDescription"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodDescription"
+        android:paddingHorizontal="15sp"
+        android:paddingBottom="15sp">
+
+        <Button
+            android:id="@+id/addToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/magenta2"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="ADD TO CART"
+            android:fontFamily="@font/questa"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

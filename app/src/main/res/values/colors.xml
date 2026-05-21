@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#623448</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#00FF00</color>
+
+    <color name="magenta">#973961</color>
+    <color name="eggplant">#623448</color>
+    <color name="rose">#40ba4979</color>
+    <color name="murrey">#722b49</color>
+    <color name="magenta2">#834660</color>
+
+</resources>

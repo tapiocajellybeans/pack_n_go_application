@@ -1,0 +1,66 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rose"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/showOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTextView"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:text="@string/show_Details"
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/hashMapTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showOrderButton"
+            android:text="HashMap: "
+            android:visibility="gone"
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            android:textSize="15sp"/>
+
+        <!-- Checkboxes -->
+        <CheckBox
+            android:id="@+id/isReady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/isDone"
+            android:layout_marginRight="30dp"
+            android:buttonTint="@color/magenta"
+            />
+
+        <CheckBox
+            android:id="@+id/isDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:buttonTint="@color/magenta"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

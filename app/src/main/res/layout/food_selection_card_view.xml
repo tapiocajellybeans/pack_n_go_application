@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/cardview">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/foodTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/questa"
+            android:paddingVertical="30sp"
+            android:paddingHorizontal="20sp"
+            android:background="@color/eggplant"
+            android:text="Order Food"
+            android:textSize="25sp"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodTitle"
+            android:background="@color/magenta"
+            android:fontFamily="@font/questa"
+            android:text="Discover All"
+            android:textSize="16sp"
+            android:padding="20dp"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textAlignment="textEnd"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rose"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20sp"
+        android:paddingVertical="10sp">
+
+        <TextView
+            android:id="@+id/foodQuantity"
+            android:layout_width="55sp"
+            android:layout_height="wrap_content"
+            android:text="qty"
+            android:textSize="20sp"
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_toRightOf="@+id/foodQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="item"
+            android:textSize="20sp"
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="125sp"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:text="price ($)"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5sp"
+            android:textSize="20sp"
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/magenta"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receiptRecyclerView"
+        android:layout_below="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line2"
+        />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_above="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/magenta"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_above="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:textSize="24sp"
+        android:paddingVertical="20sp"
+        android:paddingLeft="10sp"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"/>
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_toRightOf="@+id/total"
+        android:layout_above="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="totalPrice"
+        android:paddingVertical="20sp"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10sp"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"/>
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50sp"
+        android:layout_height="40sp"
+        android:padding="8dp"
+        android:src="@drawable/baseline_keyboard_backspace_24"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/magenta"
+        android:layout_below="@+id/total">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_alignParentBottom="true"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/magenta2"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="PLACE ORDER"
+        android:fontFamily="@font/questa"
+        android:layout_toRightOf="@+id/backButton"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:src="@drawable/bin"
+        android:padding="7sp"
+        android:id="@+id/dustbin"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_toRightOf="@+id/order"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/total"
+        android:tint="@color/magenta"
+        />
+</RelativeLayout>

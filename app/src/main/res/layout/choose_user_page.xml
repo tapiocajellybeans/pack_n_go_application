@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/rose">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100sp"
+        android:layout_marginTop="50sp">
+
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customerButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="customer"
+        android:fontFamily="@font/questa"
+        android:layout_marginVertical="30sp"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:textColor="#623448"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:letterSpacing="0.07">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:letterSpacing="0.07"
+        android:id="@+id/storeOwnerButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="store owner"
+        android:layout_below="@+id/customerButton"
+        android:textAllCaps="false"
+        android:layout_marginVertical="15sp"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:textColor="#623448"
+        android:textSize="24sp"
+        android:fontFamily="@font/questa"
+        android:textStyle="bold">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

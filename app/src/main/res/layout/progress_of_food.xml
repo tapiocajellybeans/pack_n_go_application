@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/rose">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/backButtonMainActivity"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                android:padding="7dp"
+                android:tint="@color/magenta"
+                android:layout_margin="10sp"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/progress_layout"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="100dp">
+
+                    <!--progress bar implementation-->
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circular_loading_drawable"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:textAlignment="center" />
+                    <!--progress bar implementation-->
+
+                    <androidx.core.widget.ContentLoadingProgressBar
+                        android:id="@+id/progress_bar2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circular_loading_drawable"
+                        android:backgroundTint="@color/rose"
+                        android:indeterminate="false"
+
+                        android:progressBackgroundTint="@color/rose"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgressTint="#eed2de"
+                        android:progressTint="#eed2de"
+
+                        android:textAlignment="center" />
+
+                    <!--Text implementation in center of the progress bar-->
+                    <TextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="---"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="@font/questa"
+                    android:text="Order Number"
+                    android:textColor="@color/eggplant"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/idNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/questa"
+                    android:text="0000"
+                    android:textColor="@color/eggplant"
+                    android:textSize="50sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:paddingTop="30sp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

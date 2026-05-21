@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/rose">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:textSize="30sp"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"
+        android:text="foodName"/>
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_toRightOf="@+id/foodName"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:textSize="20sp"
+        android:fontFamily="@font/questa"
+        android:textColor="@color/eggplant"
+        android:gravity="end|center"
+        android:text="food$"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/foodName"
+        android:paddingHorizontal="15sp"
+        android:paddingBottom="15sp">
+
+        <ImageView
+            android:paddingStart="50sp"
+            android:id="@+id/minus"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/minus"
+            app:tint="@color/magenta"/>
+
+        <TextView
+            android:id="@+id/foodQuantity"
+            android:layout_toRightOf="@+id/minus"
+            android:layout_toLeftOf="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="100"
+            android:fontFamily="@font/questa"
+            android:textColor="@color/eggplant"
+            android:textSize="21sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:paddingRight="50sp"
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tint="@color/magenta"
+            android:src="@drawable/baseline_add_24"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

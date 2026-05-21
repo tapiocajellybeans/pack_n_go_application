@@ -1,0 +1,15 @@
+<!-- button_item.xml -->
+<androidx.appcompat.widget.AppCompatButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_background"
+    android:clickable="true"
+    android:padding="16dp"
+    android:text="0000"
+    android:letterSpacing="0.1"
+    android:textColor="@color/eggplant"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:fontFamily="@font/questa"
+    android:layout_margin="20dp"/>
